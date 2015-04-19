@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB1A2F401AE2FEA5009B8722 /* offline.png in Resources */ = {isa = PBXBuildFile; fileRef = FB1A2F3F1AE2FEA5009B8722 /* offline.png */; };
+		FB1A2F421AE2FEB0009B8722 /* online.png in Resources */ = {isa = PBXBuildFile; fileRef = FB1A2F411AE2FEB0009B8722 /* online.png */; };
+		FB1A2F481AE30520009B8722 /* circle1.png in Resources */ = {isa = PBXBuildFile; fileRef = FB1A2F471AE30520009B8722 /* circle1.png */; };
+		FB1A2F4A1AE30568009B8722 /* circle3.png in Resources */ = {isa = PBXBuildFile; fileRef = FB1A2F491AE30568009B8722 /* circle3.png */; };
+		FB1A2F4D1AE30670009B8722 /* circle2.png in Resources */ = {isa = PBXBuildFile; fileRef = FB1A2F4B1AE30670009B8722 /* circle2.png */; };
+		FB1A2F501AE30B91009B8722 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = FB1A2F4F1AE30B91009B8722 /* home.png */; };
+		FB1A2F521AE30BCF009B8722 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = FB1A2F511AE30BCF009B8722 /* camera.png */; };
+		FB1A2F551AE31445009B8722 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1A2F541AE31445009B8722 /* Reachability.m */; };
+		FB1A2F571AE316B8009B8722 /* gallery.png in Resources */ = {isa = PBXBuildFile; fileRef = FB1A2F561AE316B8009B8722 /* gallery.png */; };
+		FB1A2F651AE3332A009B8722 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = FB1A2F641AE3332A009B8722 /* close.png */; };
+		FB1A2F6A1AE33864009B8722 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1A2F691AE33864009B8722 /* GalleryViewController.m */; };
+		FB314FEF1AE3650700D1B5CF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB314FEE1AE3650700D1B5CF /* CoreLocation.framework */; };
+		FB314FF11AE36C4600D1B5CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB314FF01AE36C4600D1B5CF /* Foundation.framework */; };
+		FB314FF31AE371D700D1B5CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB314FF21AE371D700D1B5CF /* CoreGraphics.framework */; };
+		FB314FF81AE3A0D900D1B5CF /* dbGallery.png in Resources */ = {isa = PBXBuildFile; fileRef = FB314FF71AE3A0D900D1B5CF /* dbGallery.png */; };
+		FB314FFA1AE3A1DF00D1B5CF /* backGround.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB314FF91AE3A1DF00D1B5CF /* backGround.jpg */; };
+		FB4A51BC1AE1AAAA007C6841 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4A51BB1AE1AAAA007C6841 /* main.m */; };
+		FB4A51BF1AE1AAAA007C6841 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4A51BE1AE1AAAA007C6841 /* AppDelegate.m */; };
+		FB4A51C21AE1AAAA007C6841 /* MobiClicks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB4A51C01AE1AAAA007C6841 /* MobiClicks.xcdatamodeld */; };
+		FB4A51C51AE1AAAA007C6841 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4A51C41AE1AAAA007C6841 /* HomeViewController.m */; };
+		FB4A51C81AE1AAAA007C6841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4A51C61AE1AAAA007C6841 /* Main.storyboard */; };
+		FB4A51CA1AE1AAAA007C6841 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4A51C91AE1AAAA007C6841 /* Images.xcassets */; };
+		FB4A51CD1AE1AAAA007C6841 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB4A51CB1AE1AAAA007C6841 /* LaunchScreen.xib */; };
+		FB4A51D91AE1AAAA007C6841 /* MobiClicksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4A51D81AE1AAAA007C6841 /* MobiClicksTests.m */; };
+		FB4A51E91AE1B593007C6841 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4A51E81AE1B593007C6841 /* CFNetwork.framework */; };
+		FB4A51EB1AE1B599007C6841 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4A51EA1AE1B599007C6841 /* Security.framework */; };
+		FB4A51ED1AE1B5A2007C6841 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4A51EC1AE1B5A2007C6841 /* SystemConfiguration.framework */; };
+		FB4A51EF1AE1B5A8007C6841 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4A51EE1AE1B5A8007C6841 /* QuartzCore.framework */; };
+		FB4A51F11AE1B5B2007C6841 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4A51F01AE1B5B2007C6841 /* libc++.dylib */; };
+		FB4A51F31AE1B5BA007C6841 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4A51F21AE1B5BA007C6841 /* libz.dylib */; };
+		FB4A51F51AE1D6D9007C6841 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4A51F41AE1D6D9007C6841 /* DropboxSDK.framework */; };
+		FB57B5271AE2DC70009FF320 /* mobiquity.png in Resources */ = {isa = PBXBuildFile; fileRef = FB57B5261AE2DC70009FF320 /* mobiquity.png */; };
+		FB57B52B1AE2E400009FF320 /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB57B52A1AE2E400009FF320 /* LandingViewController.m */; };
+		FB57B52D1AE2E59D009FF320 /* cameraLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FB57B52C1AE2E59D009FF320 /* cameraLogo.png */; };
+		FB57B5311AE2E758009FF320 /* circleShade.png in Resources */ = {isa = PBXBuildFile; fileRef = FB57B5301AE2E758009FF320 /* circleShade.png */; };
+		FB57B5351AE2EBD5009FF320 /* dropbox.png in Resources */ = {isa = PBXBuildFile; fileRef = FB57B5341AE2EBD5009FF320 /* dropbox.png */; };
+		FB9CBC6B1AE3583F000B906B /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9CBC6A1AE3583F000B906B /* Photo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB4A51D31AE1AAAA007C6841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB4A51AE1AE1AAAA007C6841 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB4A51B51AE1AAAA007C6841;
+			remoteInfo = MobiClicks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB1A2F3F1AE2FEA5009B8722 /* offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offline.png; sourceTree = "<group>"; };
+		FB1A2F411AE2FEB0009B8722 /* online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = online.png; sourceTree = "<group>"; };
+		FB1A2F471AE30520009B8722 /* circle1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle1.png; sourceTree = "<group>"; };
+		FB1A2F491AE30568009B8722 /* circle3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle3.png; sourceTree = "<group>"; };
+		FB1A2F4B1AE30670009B8722 /* circle2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle2.png; sourceTree = "<group>"; };
+		FB1A2F4F1AE30B91009B8722 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		FB1A2F511AE30BCF009B8722 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		FB1A2F531AE31445009B8722 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		FB1A2F541AE31445009B8722 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		FB1A2F561AE316B8009B8722 /* gallery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gallery.png; sourceTree = "<group>"; };
+		FB1A2F641AE3332A009B8722 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		FB1A2F681AE33864009B8722 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
+		FB1A2F691AE33864009B8722 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		FB314FEE1AE3650700D1B5CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FB314FF01AE36C4600D1B5CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FB314FF21AE371D700D1B5CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FB314FF71AE3A0D900D1B5CF /* dbGallery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dbGallery.png; sourceTree = "<group>"; };
+		FB314FF91AE3A1DF00D1B5CF /* backGround.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backGround.jpg; sourceTree = "<group>"; };
+		FB4A51B61AE1AAAA007C6841 /* MobiClicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiClicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4A51BA1AE1AAAA007C6841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB4A51BB1AE1AAAA007C6841 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB4A51BD1AE1AAAA007C6841 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB4A51BE1AE1AAAA007C6841 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB4A51C11AE1AAAA007C6841 /* MobiClicks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MobiClicks.xcdatamodel; sourceTree = "<group>"; };
+		FB4A51C31AE1AAAA007C6841 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FB4A51C41AE1AAAA007C6841 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FB4A51C71AE1AAAA007C6841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB4A51C91AE1AAAA007C6841 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FB4A51CC1AE1AAAA007C6841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FB4A51D21AE1AAAA007C6841 /* MobiClicksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiClicksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4A51D71AE1AAAA007C6841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB4A51D81AE1AAAA007C6841 /* MobiClicksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobiClicksTests.m; sourceTree = "<group>"; };
+		FB4A51E61AE1B538007C6841 /* Dropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Dropbox.framework; sourceTree = "<group>"; };
+		FB4A51E81AE1B593007C6841 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FB4A51EA1AE1B599007C6841 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FB4A51EC1AE1B5A2007C6841 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FB4A51EE1AE1B5A8007C6841 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FB4A51F01AE1B5B2007C6841 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		FB4A51F21AE1B5BA007C6841 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		FB4A51F41AE1D6D9007C6841 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
+		FB57B5261AE2DC70009FF320 /* mobiquity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mobiquity.png; path = ../mobiquity.png; sourceTree = "<group>"; };
+		FB57B5291AE2E400009FF320 /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
+		FB57B52A1AE2E400009FF320 /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
+		FB57B52C1AE2E59D009FF320 /* cameraLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraLogo.png; sourceTree = "<group>"; };
+		FB57B5301AE2E758009FF320 /* circleShade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circleShade.png; sourceTree = "<group>"; };
+		FB57B5341AE2EBD5009FF320 /* dropbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dropbox.png; sourceTree = "<group>"; };
+		FB9CBC691AE3583F000B906B /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = ../Photo.h; sourceTree = "<group>"; };
+		FB9CBC6A1AE3583F000B906B /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = ../Photo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB4A51B31AE1AAAA007C6841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB314FF31AE371D700D1B5CF /* CoreGraphics.framework in Frameworks */,
+				FB314FF11AE36C4600D1B5CF /* Foundation.framework in Frameworks */,
+				FB314FEF1AE3650700D1B5CF /* CoreLocation.framework in Frameworks */,
+				FB4A51F51AE1D6D9007C6841 /* DropboxSDK.framework in Frameworks */,
+				FB4A51F31AE1B5BA007C6841 /* libz.dylib in Frameworks */,
+				FB4A51F11AE1B5B2007C6841 /* libc++.dylib in Frameworks */,
+				FB4A51EF1AE1B5A8007C6841 /* QuartzCore.framework in Frameworks */,
+				FB4A51ED1AE1B5A2007C6841 /* SystemConfiguration.framework in Frameworks */,
+				FB4A51EB1AE1B599007C6841 /* Security.framework in Frameworks */,
+				FB4A51E91AE1B593007C6841 /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4A51CF1AE1AAAA007C6841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB314FFB1AE3B34500D1B5CF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FB9CBC691AE3583F000B906B /* Photo.h */,
+				FB9CBC6A1AE3583F000B906B /* Photo.m */,
+				FB1A2F531AE31445009B8722 /* Reachability.h */,
+				FB1A2F541AE31445009B8722 /* Reachability.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		FB4A51AD1AE1AAAA007C6841 = {
+			isa = PBXGroup;
+			children = (
+				FB4A51B81AE1AAAA007C6841 /* MobiClicks */,
+				FB4A51D51AE1AAAA007C6841 /* MobiClicksTests */,
+				FB4A51B71AE1AAAA007C6841 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB4A51B71AE1AAAA007C6841 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB4A51B61AE1AAAA007C6841 /* MobiClicks.app */,
+				FB4A51D21AE1AAAA007C6841 /* MobiClicksTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB4A51B81AE1AAAA007C6841 /* MobiClicks */ = {
+			isa = PBXGroup;
+			children = (
+				FB4A51BD1AE1AAAA007C6841 /* AppDelegate.h */,
+				FB4A51BE1AE1AAAA007C6841 /* AppDelegate.m */,
+				FB4A51E31AE1B2D8007C6841 /* ViewControllers */,
+				FB314FFB1AE3B34500D1B5CF /* Classes */,
+				FB4A51C61AE1AAAA007C6841 /* Main.storyboard */,
+				FB4A51C01AE1AAAA007C6841 /* MobiClicks.xcdatamodeld */,
+				FB4A51CB1AE1AAAA007C6841 /* LaunchScreen.xib */,
+				FB4A51C91AE1AAAA007C6841 /* Images.xcassets */,
+				FB57B5281AE2DC78009FF320 /* Images */,
+				FB4A51E21AE1B2CC007C6841 /* Frameworks */,
+				FB4A51B91AE1AAAA007C6841 /* Supporting Files */,
+			);
+			path = MobiClicks;
+			sourceTree = "<group>";
+		};
+		FB4A51B91AE1AAAA007C6841 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB4A51BA1AE1AAAA007C6841 /* Info.plist */,
+				FB4A51BB1AE1AAAA007C6841 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB4A51D51AE1AAAA007C6841 /* MobiClicksTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB4A51D81AE1AAAA007C6841 /* MobiClicksTests.m */,
+				FB4A51D61AE1AAAA007C6841 /* Supporting Files */,
+			);
+			path = MobiClicksTests;
+			sourceTree = "<group>";
+		};
+		FB4A51D61AE1AAAA007C6841 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB4A51D71AE1AAAA007C6841 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB4A51E21AE1B2CC007C6841 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB314FF21AE371D700D1B5CF /* CoreGraphics.framework */,
+				FB314FF01AE36C4600D1B5CF /* Foundation.framework */,
+				FB314FEE1AE3650700D1B5CF /* CoreLocation.framework */,
+				FB4A51F41AE1D6D9007C6841 /* DropboxSDK.framework */,
+				FB4A51F21AE1B5BA007C6841 /* libz.dylib */,
+				FB4A51F01AE1B5B2007C6841 /* libc++.dylib */,
+				FB4A51EE1AE1B5A8007C6841 /* QuartzCore.framework */,
+				FB4A51EC1AE1B5A2007C6841 /* SystemConfiguration.framework */,
+				FB4A51EA1AE1B599007C6841 /* Security.framework */,
+				FB4A51E81AE1B593007C6841 /* CFNetwork.framework */,
+				FB4A51E61AE1B538007C6841 /* Dropbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB4A51E31AE1B2D8007C6841 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB57B5291AE2E400009FF320 /* LandingViewController.h */,
+				FB57B52A1AE2E400009FF320 /* LandingViewController.m */,
+				FB4A51C31AE1AAAA007C6841 /* HomeViewController.h */,
+				FB4A51C41AE1AAAA007C6841 /* HomeViewController.m */,
+				FB1A2F681AE33864009B8722 /* GalleryViewController.h */,
+				FB1A2F691AE33864009B8722 /* GalleryViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FB57B5281AE2DC78009FF320 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FB314FF71AE3A0D900D1B5CF /* dbGallery.png */,
+				FB1A2F641AE3332A009B8722 /* close.png */,
+				FB1A2F561AE316B8009B8722 /* gallery.png */,
+				FB1A2F4F1AE30B91009B8722 /* home.png */,
+				FB1A2F511AE30BCF009B8722 /* camera.png */,
+				FB1A2F4B1AE30670009B8722 /* circle2.png */,
+				FB1A2F491AE30568009B8722 /* circle3.png */,
+				FB1A2F471AE30520009B8722 /* circle1.png */,
+				FB314FF91AE3A1DF00D1B5CF /* backGround.jpg */,
+				FB1A2F411AE2FEB0009B8722 /* online.png */,
+				FB1A2F3F1AE2FEA5009B8722 /* offline.png */,
+				FB57B5341AE2EBD5009FF320 /* dropbox.png */,
+				FB57B5301AE2E758009FF320 /* circleShade.png */,
+				FB57B52C1AE2E59D009FF320 /* cameraLogo.png */,
+				FB57B5261AE2DC70009FF320 /* mobiquity.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB4A51B51AE1AAAA007C6841 /* MobiClicks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB4A51DC1AE1AAAA007C6841 /* Build configuration list for PBXNativeTarget "MobiClicks" */;
+			buildPhases = (
+				FB4A51B21AE1AAAA007C6841 /* Sources */,
+				FB4A51B31AE1AAAA007C6841 /* Frameworks */,
+				FB4A51B41AE1AAAA007C6841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobiClicks;
+			productName = MobiClicks;
+			productReference = FB4A51B61AE1AAAA007C6841 /* MobiClicks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB4A51D11AE1AAAA007C6841 /* MobiClicksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB4A51DF1AE1AAAA007C6841 /* Build configuration list for PBXNativeTarget "MobiClicksTests" */;
+			buildPhases = (
+				FB4A51CE1AE1AAAA007C6841 /* Sources */,
+				FB4A51CF1AE1AAAA007C6841 /* Frameworks */,
+				FB4A51D01AE1AAAA007C6841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB4A51D41AE1AAAA007C6841 /* PBXTargetDependency */,
+			);
+			name = MobiClicksTests;
+			productName = MobiClicksTests;
+			productReference = FB4A51D21AE1AAAA007C6841 /* MobiClicksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB4A51AE1AE1AAAA007C6841 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Mobiquity;
+				TargetAttributes = {
+					FB4A51B51AE1AAAA007C6841 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					FB4A51D11AE1AAAA007C6841 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = FB4A51B51AE1AAAA007C6841;
+					};
+				};
+			};
+			buildConfigurationList = FB4A51B11AE1AAAA007C6841 /* Build configuration list for PBXProject "MobiClicks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB4A51AD1AE1AAAA007C6841;
+			productRefGroup = FB4A51B71AE1AAAA007C6841 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB4A51B51AE1AAAA007C6841 /* MobiClicks */,
+				FB4A51D11AE1AAAA007C6841 /* MobiClicksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB4A51B41AE1AAAA007C6841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4A51C81AE1AAAA007C6841 /* Main.storyboard in Resources */,
+				FB1A2F4A1AE30568009B8722 /* circle3.png in Resources */,
+				FB314FF81AE3A0D900D1B5CF /* dbGallery.png in Resources */,
+				FB1A2F481AE30520009B8722 /* circle1.png in Resources */,
+				FB57B5271AE2DC70009FF320 /* mobiquity.png in Resources */,
+				FB1A2F501AE30B91009B8722 /* home.png in Resources */,
+				FB1A2F4D1AE30670009B8722 /* circle2.png in Resources */,
+				FB1A2F521AE30BCF009B8722 /* camera.png in Resources */,
+				FB57B5311AE2E758009FF320 /* circleShade.png in Resources */,
+				FB4A51CD1AE1AAAA007C6841 /* LaunchScreen.xib in Resources */,
+				FB1A2F421AE2FEB0009B8722 /* online.png in Resources */,
+				FB1A2F401AE2FEA5009B8722 /* offline.png in Resources */,
+				FB314FFA1AE3A1DF00D1B5CF /* backGround.jpg in Resources */,
+				FB57B5351AE2EBD5009FF320 /* dropbox.png in Resources */,
+				FB57B52D1AE2E59D009FF320 /* cameraLogo.png in Resources */,
+				FB1A2F571AE316B8009B8722 /* gallery.png in Resources */,
+				FB1A2F651AE3332A009B8722 /* close.png in Resources */,
+				FB4A51CA1AE1AAAA007C6841 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4A51D01AE1AAAA007C6841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB4A51B21AE1AAAA007C6841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4A51C21AE1AAAA007C6841 /* MobiClicks.xcdatamodeld in Sources */,
+				FB57B52B1AE2E400009FF320 /* LandingViewController.m in Sources */,
+				FB4A51BF1AE1AAAA007C6841 /* AppDelegate.m in Sources */,
+				FB4A51C51AE1AAAA007C6841 /* HomeViewController.m in Sources */,
+				FB9CBC6B1AE3583F000B906B /* Photo.m in Sources */,
+				FB1A2F551AE31445009B8722 /* Reachability.m in Sources */,
+				FB1A2F6A1AE33864009B8722 /* GalleryViewController.m in Sources */,
+				FB4A51BC1AE1AAAA007C6841 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4A51CE1AE1AAAA007C6841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4A51D91AE1AAAA007C6841 /* MobiClicksTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB4A51D41AE1AAAA007C6841 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB4A51B51AE1AAAA007C6841 /* MobiClicks */;
+			targetProxy = FB4A51D31AE1AAAA007C6841 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB4A51C61AE1AAAA007C6841 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB4A51C71AE1AAAA007C6841 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB4A51CB1AE1AAAA007C6841 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB4A51CC1AE1AAAA007C6841 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB4A51DA1AE1AAAA007C6841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FB4A51DB1AE1AAAA007C6841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB4A51DD1AE1AAAA007C6841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MobiClicks",
+				);
+				INFOPLIST_FILE = MobiClicks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB4A51DE1AE1AAAA007C6841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MobiClicks",
+				);
+				INFOPLIST_FILE = MobiClicks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FB4A51E01AE1AAAA007C6841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MobiClicksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobiClicks.app/MobiClicks";
+			};
+			name = Debug;
+		};
+		FB4A51E11AE1AAAA007C6841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MobiClicksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobiClicks.app/MobiClicks";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB4A51B11AE1AAAA007C6841 /* Build configuration list for PBXProject "MobiClicks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4A51DA1AE1AAAA007C6841 /* Debug */,
+				FB4A51DB1AE1AAAA007C6841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB4A51DC1AE1AAAA007C6841 /* Build configuration list for PBXNativeTarget "MobiClicks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4A51DD1AE1AAAA007C6841 /* Debug */,
+				FB4A51DE1AE1AAAA007C6841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB4A51DF1AE1AAAA007C6841 /* Build configuration list for PBXNativeTarget "MobiClicksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4A51E01AE1AAAA007C6841 /* Debug */,
+				FB4A51E11AE1AAAA007C6841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FB4A51C01AE1AAAA007C6841 /* MobiClicks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FB4A51C11AE1AAAA007C6841 /* MobiClicks.xcdatamodel */,
+			);
+			currentVersion = FB4A51C11AE1AAAA007C6841 /* MobiClicks.xcdatamodel */;
+			path = MobiClicks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FB4A51AE1AE1AAAA007C6841 /* Project object */;
+}
